@@ -1,0 +1,39 @@
+/*
+    sass file
+*/
+p {
+  color: yellow; }
+
+/*
+    body
+*/
+html {
+  font-size: 30px; }
+
+body {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 3rem;
+  color: red; }
+
+h1, h2 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-size: 2rem; }
+
+/*
+    Grid
+*/
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 80vw 1fr;
+  border: 1px solid red; }
+  .grid header, .grid main, .grid footer {
+    grid-column: 2 / 3;
+    background: pink; }
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr; }
+
+/*# sourceMappingURL=style.css.map */

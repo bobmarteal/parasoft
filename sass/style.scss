@@ -1,0 +1,50 @@
+/*
+    sass file
+*/
+
+//setup
+@import 'variables';
+@import 'mixins';
+
+// modules
+@import 'modules/test';
+
+// move out to modules
+//$font : 'Barrio', cursive;
+//$sansFont : 'Raleway', sans-serif;
+$roboto: 'Roboto Slab', serif;
+
+/*
+    body
+*/
+html{
+    font-size: 30px;
+}
+body{
+    font-family: $roboto;
+    font-weight: 300;
+    font-size: 3rem;
+    color: $black;
+}
+h1, h2{
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+/*
+    Grid
+*/
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 80vw 1fr;
+    border: 1px solid red;
+    header, main, footer{
+      grid-column: 2 / 3;
+      background: pink;
+    }
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
