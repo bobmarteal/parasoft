@@ -1,0 +1,18 @@
+/*
+    Header
+    -laysout the header section
+*/
+
+header{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background: $darkBlue;
+}
+.logo{
+    background: red;
+    grid-column: 1/5;
+}
+.external, nav{
+    background: yellow;
+    grid-column: 6/13;
+}

@@ -1,0 +1,17 @@
+/*
+    main layout for parasoft.com
+    includes main 'rows' and 'blocks'
+*/
+body{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    &>*:first-child{
+        width: 100%;
+        padding: 0 4rem;
+
+    }
+}

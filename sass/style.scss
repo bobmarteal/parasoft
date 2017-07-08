@@ -2,12 +2,17 @@
     sass file
 */
 
+@import 'normailize';
+
 //setup
 @import 'variables';
 @import 'mixins';
 
 // modules
-@import 'modules/test';
+@import 'modules/layout';
+@import 'modules/header';
+@import 'modules/footer';
+@import 'modules/menus';
 
 // move out to modules
 //$font : 'Barrio', cursive;
@@ -18,12 +23,12 @@ $roboto: 'Roboto Slab', serif;
     body
 */
 html{
-    font-size: 30px;
+    font-size: 18px;
 }
 body{
     font-family: $roboto;
     font-weight: 300;
-    font-size: 3rem;
+    font-size: 1rem;
     color: $black;
 }
 h1, h2{
