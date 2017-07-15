@@ -1,8 +1,7 @@
-# boiler
-This is my base for new sites.
+# Parasoft
 
-Mostly trying to wrangle my updated Grunt modules list.
 
+##Grunt stuff
 * concat
 * uglify
 * sass
@@ -13,3 +12,14 @@ Mostly trying to wrangle my updated Grunt modules list.
 * svgmin
 * browserSync
 * watch
+
+##sass modules
+* buttons
+* carousels
+* menus
+* utilities
+* quotes
+* footer
+* header
+* layout
+* type

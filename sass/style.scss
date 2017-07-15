@@ -12,7 +12,6 @@
 @import 'modules/layout';
 @import 'modules/utilities';
 @import 'modules/type';
-//@import 'modules/rows';
 @import 'modules/header';
 @import 'modules/footer';
 @import 'modules/menus';
@@ -21,11 +20,6 @@
 @import 'modules/quotes';
 @import 'modules/buttons';
 @import 'modules/tabs';
-
-// move out to modules
-//$font : 'Barrio', cursive;
-//$sansFont : 'Raleway', sans-serif;
-$roboto: 'Roboto Slab', serif;
 
 /*
     body
@@ -36,11 +30,6 @@ html{
 body{
 
 }
-h1, h2{
-    font-family: $roboto;
-    font-weight: 400;
-    font-size: 2rem;
-}
 img{
     max-width: 100%;
 }
@@ -49,21 +38,4 @@ a{
 }
 ul{
     padding: 0;
-}
-
-/*
-    Grid
-*/
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 80vw 1fr;
-    border: 1px solid red;
-    header, main, footer{
-      grid-column: 2 / 3;
-      background: pink;
-    }
-}
-main{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
 }
