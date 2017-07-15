@@ -1,0 +1,16 @@
+/*
+    Tabs
+    for features
+*/
+.tabs{
+
+}
+.tabs__nav{
+
+}
+.tabs__pane{
+    display: none;
+    &.active{
+        display: block;
+    }
+}

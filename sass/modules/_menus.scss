@@ -8,7 +8,25 @@
 //general
 .links{
     list-style-type: none;
-    display: flex;
+    //display: flex;
     margin: 0;
     padding: 0;
+    li{
+        display: inline-block;
+        margin-right: .75rem;
+        &:last-of-type{
+            margin-right: 0;
+        }
+    }
+    a{
+        color: $white;
+        text-decoration: none;
+        &.cta{
+            color: $lightGreen;
+            text-transform: uppercase;
+        }
+        &.external{
+            color: $lightBlue;
+        }
+    }
 }

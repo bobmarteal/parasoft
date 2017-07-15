@@ -1,1 +1,41 @@
-<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="svg-sprite" />
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="svg-sprite">
+    <defs>
+        <path id="logo-2-b" d="M50.05 99.568L.53 50.048 50.05.528l49.52 49.52-49.52 49.52" />
+        <filter x="-38.9%" y="-38.9%" width="177.8%" height="177.8%" filterUnits="objectBoundingBox" id="logo-2-a">
+            <feMorphology radius="14.529" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1" />
+            <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1" />
+            <feMorphology radius="14.529" in="SourceAlpha" result="shadowInner" />
+            <feOffset in="shadowInner" result="shadowInner" />
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1" />
+            <feColorMatrix values="0 0 0 0 0.341517857 0 0 0 0 0.109062294 0 0 0 0 0.184231348 0 0 0 0 0" in="shadowOffsetOuter1" />
+        </filter>
+    </defs>
+    <symbol viewBox="0 0 105 105" id="shape-logo-1">
+        <title>logo-1</title>
+        <g fill-rule="evenodd">
+            <path stroke="#0093D2" stroke-linejoin="round" stroke-width="4.554" d="M65.471 74.183L52.048 60.76 38.625 74.183m-8.681-8.909L43.366 51.85 29.944 38.428m8.682-8.828l13.423 13.424L65.472 29.6" />
+            <path stroke="#0093D2" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.058" d="M52.048 101.568l-49.52-49.52 49.52-49.52 49.52 49.52-49.52 49.52" />
+            <path stroke="#0061A1" stroke-dasharray="45.162 11.291" stroke-width="7.527" d="M76.242 65.76L63.06 52.576l13.182-13.18" />
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 105 105" id="shape-logo-2">
+        <title>Page 1</title>
+        <g fill-rule="evenodd">
+            <path stroke="#0093D2" stroke-width="4.554" stroke-linejoin="round" d="M65.471 74.183L52.048 60.76 38.625 74.183m-8.681-8.909L43.366 51.85 29.944 38.428m8.682-8.828l13.423 13.424L65.472 29.6" />
+            <g stroke-linecap="round" stroke-linejoin="round" transform="translate(2 2)">
+                <use filter="url(#logo-2-a)" xlink:href="#logo-2-b" />
+                <use stroke="#0093D2" stroke-width="5.058" xlink:href="#logo-2-b" />
+            </g>
+            <path stroke="#0061A1" stroke-width="7.527" stroke-dasharray="45.162,11.291" d="M76.242 65.76L63.06 52.576l13.182-13.18" />
+        </g>
+    </symbol>
+    <symbol viewBox="0 0 105 105" id="shape-logo-3">
+        <title>logo-3</title>
+        <g fill-rule="evenodd">
+            <path d="M-16-16h134v134H-16z" />
+            <path stroke="#0093D2" stroke-linejoin="round" stroke-width="4.554" d="M65.471 74.183L52.048 60.76 38.625 74.183m-8.681-8.909l13.422-13.423-13.422-13.423m8.682-8.827l13.423 13.423 13.423-13.423" />
+            <path stroke="#0093D2" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.058" d="M52.05 101.568L2.53 52.048 52.05 2.529l49.52 49.519-49.52 49.52" />
+            <path stroke="#0061A1" stroke-dasharray="45.162 11.291" stroke-width="7.527" d="M76.242 65.759L63.06 52.577l13.182-13.181" />
+        </g>
+    </symbol>
+</svg>

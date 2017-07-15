@@ -7,9 +7,9 @@ module.exports = function(grunt) {
             sass: "sass/",
             jsPlugins: "js/plugins/",
             jsScripts: "js/scripts/",
+            jsBuild: "js/build/",
             svgs: "svgs/",
             cssBuild: "css/",
-            jsBuild: "js/",
             svgsBuild: "svgs/"
         },
       // concat - combine list of files into one in js/build
@@ -17,7 +17,7 @@ module.exports = function(grunt) {
             plugins: {
                 files: [
                     {src: [
-                        '<%= dirs.jsPlugins %>test.js'
+                        '<%= dirs.jsPlugins %>*.js'
                     ],
                     dest: '<%= dirs.jsBuild %>plugins.js', separator: ';'},
                 ],
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
             scripts: {
                 files: [
                     {src: [
-                        '<%= dirs.jsScripts %>test.js'
+                        '<%= dirs.jsScripts %>*.js'
                     ],
                     dest: '<%= dirs.jsBuild %>scripts.js', separator: ';'},
                 ],
@@ -153,5 +153,6 @@ module.exports = function(grunt) {
 
 
     grunt.registerTask('css', ['sass', 'postcss']);
+    grunt.registerTask('svg', ['svgmin', 'svgstore']);
     grunt.registerTask('default', ['sass', 'concat', 'uglify', 'postcss', 'svgmin', 'svgstore', 'browserSync', 'watch']);
 };

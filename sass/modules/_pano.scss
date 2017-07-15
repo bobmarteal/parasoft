@@ -1,0 +1,44 @@
+/*
+    Panos - featured stuff on pages
+    - text block
+    - backgrounds
+    -images
+*/
+.pano {
+    background: #fff url("/images/logo-4.png");
+    background-size: 90px 90px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    &::before {
+        background: linear-gradient(45deg, rgba(107,251,134,.9) 0%,rgba(103,254,188,.9) 65%,rgba(32,210,255,.9) 100%);
+        opacity: 0.35;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        content: '';
+        z-index: 1;
+    }
+    .row {
+        background: none;
+        position: relative;
+        z-index: 2;
+        height: 500px;
+        padding: 0 4rem;
+        width: 100%;
+        max-width: $large;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .description{
+        flex: 0 0 30%;
+        align-self: center;
+    }
+    .image{
+        flex: 0 0 65%;
+        align-self: center;
+        text-align: center;
+        margin-bottom: -5rem;
+    }
+}

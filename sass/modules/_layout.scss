@@ -3,15 +3,81 @@
     includes main 'rows' and 'blocks'
 */
 body{
+    background: $darkBlue;
     display: flex;
     flex-direction: column;
 }
-.row{
+
+/*
+    Rows
+    - basic styles for rows
+*/
+
+div[class*="row"]{
     display: flex;
     justify-content: center;
-    &>*:first-child{
-        width: 100%;
-        padding: 0 4rem;
+    background: $white;
+    padding: 4rem 0;
+    &[class*="darkBlue"]{
+        background: $darkBlue;
+    }
+    &[class*="lightBlue"]{
+        background: $lightBlue;
+    }
+    &[class*="lightGray"]{
+        background: $lightGray;
+    }
+    &[class*="column"]{
+        flex-direction: column;
+    }
+}
 
+/*
+    Blocks
+    - the first children of rows
+*/
+
+*[class*="block"]{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: $large;
+    padding: 0 4rem;
+    &[class*="5-4"]{
+        div:first-of-type{
+            background: red;
+            flex: 0 0 50%;
+        }
+        div:last-of-type{
+            background: yellow;
+            flex: 0 0 40%;
+        }
+    }
+    &[class*="4-5"]{
+        div:first-of-type{
+            //background: pink;
+            flex: 0 0 40%;
+        }
+        div:last-of-type{
+            //background: gray;
+            flex: 0 0 50%;
+        }
+    }
+    &[class*="3-6"]{
+        div:first-of-type{
+            //background: pink;
+            flex: 0 0 30%;
+        }
+        div:last-of-type{
+            //background: gray;
+            flex: 0 0 60%;
+        }
+    }
+    &[class*="1-1"]{
+        flex-direction: column;
+    }
+    div{
+        align-self: center;
+        padding: 0 1rem;
     }
 }

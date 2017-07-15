@@ -10,9 +10,17 @@
 
 // modules
 @import 'modules/layout';
+@import 'modules/utilities';
+@import 'modules/type';
+//@import 'modules/rows';
 @import 'modules/header';
 @import 'modules/footer';
 @import 'modules/menus';
+@import 'modules/pano';
+@import 'modules/carousels';
+@import 'modules/quotes';
+@import 'modules/buttons';
+@import 'modules/tabs';
 
 // move out to modules
 //$font : 'Barrio', cursive;
@@ -26,15 +34,21 @@ html{
     font-size: 18px;
 }
 body{
-    font-family: $roboto;
-    font-weight: 300;
-    font-size: 1rem;
-    color: $black;
+
 }
 h1, h2{
     font-family: $roboto;
     font-weight: 400;
     font-size: 2rem;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    padding: 0;
 }
 
 /*

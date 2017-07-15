@@ -1,0 +1,16 @@
+/*
+    Buttons
+    -ctas
+*/
+a[class*="btn"]{
+    display: block;
+    border-radius: .75em;
+}
+a[class*="big"]{
+    font-size: 2rem;
+    padding: .5rem 2rem;
+}
+a[class*="white"]{
+    border:3px solid $white;
+    color: $white;
+}

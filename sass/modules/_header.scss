@@ -3,16 +3,29 @@
     -laysout the header section
 */
 
-header{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+#headerMain{
     background: $darkBlue;
+    height: 100px;
+    width: 100%;
+    max-width: $huge;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    div:first-of-type{
+        flex: 0 0 16%;
+    }
+    div:last-of-type{
+        flex: 0 0 75%;
+        text-align: right;
+    }
 }
+
 .logo{
-    background: red;
-    grid-column: 1/5;
+    //background: red;
+    //grid-column: 1/3;
 }
 .external, nav{
-    background: yellow;
-    grid-column: 6/13;
+    //background: yellow;
+    //grid-column: 6/13;
 }
